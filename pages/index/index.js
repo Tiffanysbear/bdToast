@@ -10,11 +10,21 @@ Page({
     onLoad() {
         new app.BdToast();
     },
+    toastHandler() {
+        console.log('11');
+    },
     clickShowToast(e) {
+        this.bdtoast.toast({
+            title: '',
+            iconSrc: '',
+            subTitle: '',
+            tap: this.toastHandler
+        });
         switch (+e.target.dataset.id) {
             case 1:
                 this.bdtoast.toast({
-                    title: '仅显示标题'
+                    title: '仅显示标题',
+                    tap: this.toastHandler
                 });
                 break;
             case 2:
@@ -32,7 +42,6 @@ Page({
             case 4:
                 this.bdtoast.toast({
                     title: '设置标题',
-                    iconType: 1,
                     subTitle: '副标题'
                 });
                 break;

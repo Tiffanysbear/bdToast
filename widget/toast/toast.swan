@@ -1,7 +1,9 @@
 <!-- bdtoast.swan -->
 <template name="bdtoast">
-    <view class="toast-container" s-if="reveal" bind:tap="">
-        <view class="toast-wrap" animation="{{animationData}}">
+    <view class="toast-container" s-if="reveal">
+        <view class="toast-wrap"
+            animation="{{animationData}}"
+            bind:tap="toastHandler">
             <slot name="toast"></slot>
             <!-- 添加iconSrc，可自定义icon -->
             <image s-if="iconSrc" class="icon" src="{{iconSrc}}"></image>
