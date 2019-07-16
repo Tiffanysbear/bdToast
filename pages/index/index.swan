@@ -1,0 +1,8 @@
+<!-- index.swan -->
+<view class="container">
+    <!-- toast使用 -->
+    <import src="/widget/toast/toast.swan"/>
+    <template is="bdtoast" data="{{bdtoast}}"/>
+
+    <view class="logo" bind:tap="clickShowToast"></view>
+</view>

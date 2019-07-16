@@ -1,0 +1,21 @@
+<!-- bdtoast.swan -->
+<template name="bdtoast">
+    <view class="toast-container" s-if="reveal">
+        <view class="toast-wrap" animation="{{animationData}}">
+            <slot name="toast"></slot>
+            <!-- 添加iconSrc，可自定义icon -->
+            <image s-if="iconSrc" class="icon" src="{{iconSrc}}"></image>
+            <!-- iconType: icon类型，默认简单文本 -->
+            <template s-if="{{iconType == 1}}">
+                <text class="title" s-if="title">{{title}}</text>
+                <text class="sub-title" s-if="subTitle">
+                    <text class="vertical-line">|</text>
+                    {{subTitle}}<text class="rec-angl"></text>
+                </text>
+            </template>
+            <template s-else>
+                <text class="title" s-if="title">{{title}}</text>
+            </template>
+        </view>
+    </view>
+</template>

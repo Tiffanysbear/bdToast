@@ -1,0 +1,13 @@
+/**
+ * @file index.css
+ * @author swan
+ */
+@import "../../widget/toast/toast.css";
+
+.logo {
+    width: 375rpx;
+    height: 60rpx;
+    background-image: url("../../images/smartapp.png");
+    background-size: 375rpx;
+    margin: 500rpx auto;
+}

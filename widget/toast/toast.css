@@ -1,0 +1,55 @@
+/* toast.css */
+/* 样式可以根据自己的需要，自定义定制 */
+.toast-container {
+    position: fixed;
+    width: 100%;
+    bottom: 90px;
+    z-index: 10000;
+    justify-content: center;  
+    align-items: center; 
+    display: flex;
+}
+.toast-container .toast-wrap {
+    white-space: nowrap;
+    background-color: rgba(0, 0, 0, .8);
+    color: #fff;
+    text-align: center;
+    margin: 0 auto;
+    font-weight: 100;
+    font-size: 32rpx;
+    padding: 12px 14px;
+    border-radius: 4px;
+}
+.toast-wrap .vertical-line {
+    padding-left: 10px;
+    padding-right: 10px;
+    color: rgba(255, 255, 255, .4);
+}
+.toast-wrap .title {
+    max-width: 69vw;
+    display: inline-block;
+    float: left;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+.toast-wrap .icon {
+    width: 32rpx;
+    height: 32rpx;
+    position: relative;
+    top: 7rpx;
+    margin-right: 5px;
+    float: left;
+}
+.rec-angl {
+    position: relative;
+    height: 0;
+    width: 0;
+    border-left: 6px solid #fff;
+    border-bottom: 4px solid transparent;
+    border-right: 4px solid transparent;
+    border-top: 4px solid transparent;
+    display: inline-block;
+    left: 6px;
+    top: -2px;
+}
