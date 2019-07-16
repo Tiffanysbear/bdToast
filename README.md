@@ -118,15 +118,15 @@ Page({
 参数说明：
 
 
-参数| 类型| 必填 |说明
----| ---|---|---|---
-title |string| 是 | 标题
-iconSrc |string | 否 | icon地址，提供icon的url，icon大小为32px * 32px
-subTitle |string | 否 | 副标题，同时需要title存在才会显示，否则不显示副标题
-duration | number| 否| 持续时间，不填默认1500毫秒
-success| function| 否 | 执行成功的回调
-fail| function | 否| 执行失败的回调
-complete| function| 否| 完成的回调，不管有没有执行成功
+|参数| 类型| 必填 |说明|
+|---| ---|---|---|---|
+|title |string| 是 | 标题|
+|iconSrc |string | 否 | icon地址，提供icon的url，icon大小为32px * 32px|
+|subTitle |string | 否 | 副标题，同时需要title存在才会显示，否则不显示副标题|
+|duration | number| 否| 持续时间，不填默认1500毫秒|
+|success| function| 否 | 执行成功的回调|
+|fail| function | 否| 执行失败的回调|
+|complete| function| 否| 完成的回调，不管有没有执行成功|
 
 
 ## 最后说明
