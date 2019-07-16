@@ -117,7 +117,7 @@ Page({
 
 参数说明：
 
-参数| 类型| 必填 |说明
+参数| 类型| 必填 |说明|
 ---| ---|---|---|---|
 title |string| 是 | 标题
 iconSrc |string | 否 | icon地址，提供icon的url，icon大小为32px * 32px|
