@@ -4,5 +4,17 @@
     <import src="/widget/toast/toast.swan"/>
     <template is="bdtoast" data="{{bdtoast}}"/>
 
-    <view class="logo" bind:tap="clickShowToast"></view>
+    <view class="logo"></view>
+    <view class="button" data-id="1" bind:tap="clickShowToast">
+        仅显示标题
+    </view>
+    <view class="button" data-id="2" bind:tap="clickShowToast">
+        设置图片+文字
+    </view>
+    <view class="button" data-id="3" bind:tap="clickShowToast">
+        设置时间
+    </view>
+    <view class="button" data-id="4" bind:tap="clickShowToast">
+        设置标题+副标题
+    </view>
 </view>
