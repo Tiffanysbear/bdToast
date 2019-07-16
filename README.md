@@ -127,7 +127,7 @@ Page({
 | success | function |  否 | 执行成功的回调 | 
 |  fail |  function | 否 |  执行失败的回调 | 
 |  complete | function | 否 | 完成的回调，不管有没有执行成功 | 
-
+ 
 
 ## 最后说明
 例子Demo中也有关于toast的点击tap事件的绑定，因为此功能不是很常用，有兴趣的可以clone下来自行研究。另外，如果有样式结构或者样式不符合需求的话，可以自己在 `widget/toast`的源码中进行更新，直到符合自己的需求~
